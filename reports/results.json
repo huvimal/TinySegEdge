@@ -1,0 +1,35 @@
+{
+  "project": "TinySegEdge",
+  "number": 33,
+  "status": "local_run_passed",
+  "timestamp_utc": "2026-11-21T04:31:17Z",
+  "duration_seconds": 4.407927513122559,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0",
+    "torch": "2.10.0+cpu",
+    "transformers": "4.57.6",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.32.0",
+    "mcp": "2.3.0"
+  },
+  "source_sha256": {
+    "common.py": "6824312bac56d81a071760617f624272948f76fcae8190f8168a8911c8f7e8b0",
+    "experiment.py": "089e46165663cf973e98e7e98d06424e5175bf22c66d991ff68e7934c1bc959f",
+    "run.py": "f59c8f7399ab614d89f8a565b96f60875e75284d439fe5a38bd6837c730dfdbf"
+  },
+  "result": {
+    "test_pixel_iou": 1.0,
+    "onnx_max_logit_difference": 1.9073486328125e-06,
+    "onnx_bytes": 212,
+    "checks": [
+      "Actual ONNX Runtime logits match trained PyTorch convolution",
+      "Separate seed for held-out shapes"
+    ],
+    "scope": "One-layer trained segmentation on authored procedural rectangles. No real-world defect or medical image accuracy claim."
+  },
+  "models_used": [],
+  "publication_note": "Local fixture checks passed, not independent validation or user approval. Review this run before publishing."
+}

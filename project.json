@@ -1,0 +1,18 @@
+{
+  "number": 33,
+  "name": "TinySegEdge",
+  "short": "Train and export segmentation",
+  "summary": "Train a convolutional rectangle segmenter and compare actual ONNX Runtime outputs against PyTorch.",
+  "profile": "deep",
+  "timeout": 600,
+  "scope": "One-layer trained segmentation on authored procedural rectangles. No real-world defect or medical image accuracy claim.",
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "Data Processing",
+    "Software Testing"
+  ],
+  "additional_setup": [
+    "onnx"
+  ]
+}
